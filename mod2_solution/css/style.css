@@ -48,14 +48,20 @@ h1 {
 
 /* Tablet Version */
 @media (min-width: 768px) AND (max-width: 991px) {
-    .section:nth-last-child(1):nth-child(odd) {
-        grid-area: last_odd;
+    .section:nth-child(1) {
+        grid-area: first;
+    }
+    .section:nth-child(2) {
+        grid-area: second;
+    }
+    .section:nth-child(3) {
+        grid-area: third;
     }
     #sections-container {
         display: grid;
         grid-template-rows: [row1-start] auto [row1-end row2-start] auto [row2-end];
         grid-template-columns: auto auto;
-        grid-template-areas: "last_odd last_odd";
+        grid-template-areas: "first second" "third third";
     }
 }
 
