@@ -1,8 +1,3 @@
-.container {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 h1 {
     font-weight: 700;
 }
@@ -24,4 +19,12 @@ h1 {
 .menu-section {
     background-color: #ccc;
     margin: 10px;
+}
+
+/* Mobile Version */
+@media (max-width: 767px) {
+    .menu-section {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
